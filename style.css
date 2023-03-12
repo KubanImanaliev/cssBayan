@@ -72,3 +72,51 @@ label:hover{
     -moz-text-shadow: 2px 2px 2px #000;
         text-shadow: 2px 2px 2px #000;
 }
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    img{
+     max-width: 100%;
+     text-align: center;
+    }
+    label{
+        font-size: 50%;
+    }
+ }
+
+
+ @media all and (min-width: 820px){
+    img{
+     max-width: 80%;
+     text-align: center;
+    }
+    label{
+        font-size: 80%;
+    }
+ }
+
+ @media all and (min-width: 1920px){
+    img{
+     max-width: 100%;
+     text-align: center;
+    }
+    label{
+        font-size: 100%;
+    }
+ }
