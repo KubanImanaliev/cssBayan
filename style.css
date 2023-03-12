@@ -1,0 +1,57 @@
+.hidecontent {
+    display: none;
+}
+#myaccordion label {
+    box-shadow:0 0 20px #d4d4d4;
+    display: block;
+    padding: 8px 22px;
+    margin: 20px 0px 1px 0px;
+    cursor: pointer;
+    background: #5f75a4;
+    color: #FFF;
+    transition: ease .5s;
+}
+#myaccordion label:hover {
+    background: #5f75ff;
+
+}
+#myaccordion label:after{
+    content: 'x';
+    float: right;
+    color: #FFF;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out;
+    top: -50%;
+
+}
+.content {
+    box-shadow:0 0 20px #d4d4d4;
+    text-align: center;
+    background: #ffff;
+    padding: 10px 25px;
+    border: 1px solid #d4d4d4;
+    margin: 0 auto;
+}
+
+ img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+ }
+
+
+#myaccordion input:checked + label  + .content {
+    display: block;
+    webkit-animation: fadeIn 0.5s ease-out;
+    -moz-animation: fadeIn 0.5s ease-out;
+    -o-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+}
+#myaccordion input:checked + label:after {
+    content: "+";
+    animation: fadeIn 0.5s ease-out;
+}
+
+#myaccordion:hover label:after {
+    opacity: 1;
+}
